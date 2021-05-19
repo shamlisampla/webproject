@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact_us.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <!-- Navbar containg links to six different pages -->
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Student Mehkama</a>
+        
+            <!-- Toggler/collapse Button for small screen sizes-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Navbar links to 6 different pages -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ticTacToe.html">Fun Game</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container contact-form">
+        <div class="contact-image">
+            <img src="img/Logo.png" alt="rocket_contact" />
+        </div>
+        <form method="post" action="./index.html">
+            <h3>Drop Us a Message</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" required
+                            value="" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-check-label" for="optForNewsLetter">Send me the weekly News Letter</label>   
+                        <input type="checkbox" id="optForNewsLetter" class="form-check-input ml-4">
+                    </div>
+                    <div class="form-check-inline mb-4">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Inside Canada
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Outside Canada
+                        </label>
+                    </div>
+                    <div class="dropdown dropright mb-4">
+                        <button  type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                            Province of Choice
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Quebec</a>
+                            <a class="dropdown-item" href="#">Alberta</a>
+                            <a class="dropdown-item" href="#">British Columbia</a>
+                            <a class="dropdown-item" href="#">Manitoba</a>
+                            <a class="dropdown-item" href="#">New Brunswick</a>
+                            <a class="dropdown-item" href="#">Newfoundland and Labrador</a>
+                            <a class="dropdown-item" href="#">Northwest Territories</a>
+                            <a class="dropdown-item" href="#">Nova Scotia</a>
+                            <a class="dropdown-item" href="#">Nunavut</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class=" btn-primary" value="Send Message" />
+                        <!-- <a href="index.html" class="btn btn-primary btn-xl">Send Message</a> -->
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea required name="txtMsg" class="form-control" placeholder="Your Message *"
+                            style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+    
+        <!-- Footer Elements -->
+        <div class="container">
+    
+            <!-- Social Media buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1" href="#">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="#">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1" href="#">
+                        <i class="fab fa-google-plus-g"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1" href="#">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+    
+            </ul>
+    
+    
+        </div>
+    
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+            <a href="index.html"> StudentMehkama.com</a>
+        </div>
+    
+    
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap");
+
+.landing-page {
+  display: grid;
+  place-items: center;
+  background-image: url("img/bg-index.jpg");
+  height: 100%;
+  padding-bottom: 300px;
+}
+.landing-page img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.landing-page h1 {
+  margin-top: 210px;
+  color: #400bec;
+  font-family: KoHo, Source Sans Pro;
+  font-weight: 900;
+
+  font-size: 7rem;
+}
+
+.landing-page p {
+  /* margin-top: 210px; */
+  color: white;
+  font-family: KoHo, Source Sans Pro;
+  font-weight: 900;
+
+  font-size: 2rem;
+}
+
+.landing-page a {
+  font-family: KoHo, Source Sans Pro;
+  padding: 20px;
+  font-weight: 900;
+}
+
+/* Css for services page */
+
+.services .card {
+  border: solid black 3px;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+/* Css for services page */
+
+/* Css for about us page */
+
+.map {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 1000px;
+}
+
+.map p {
+  color: white;
+  border: solid white 7px;
+  margin: 0;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.map iframe {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Css for about us page */
+
+/* Css applied to the tic tac toe game */
+
+.game {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  /* text-shadow: -1px -1px #333; */
+  background: rgb(81, 138, 124);
+}
+.game h1 {
+  font-weight: bold;
+}
+.game .turn {
+  margin-bottom: 10px;
+}
+.game table {
+  border-collapse: collapse;
+  width: 150px;
+  margin: 0 auto;
+}
+.game table td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+.game table td:before {
+  font-size: 1.5em;
+  line-height: 1;
+}
+.game table td.cross:before {
+  content: "x";
+  color: lightblue;
+}
+.game table td.circle:before {
+  content: "o";
+  color: pink;
+}
+.game .reset {
+  background: #555;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.game .reset:hover {
+  opacity: 0.8;
+}
+
+/* Css for the tic tac toe game */
+
+/* IMAGE GALLERY*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+/* IMAGE GALLERY*/
+
+/* Css for SlideShow */
+
+/* body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: pink; */
+/* } */
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  /* border: 1px solid black; */
+  width: 400px;
+  height: 400px;
+}
+.view {
+  width: 100%;
+  height: 90%;
+  border: 10px solid pink;
+  border-bottom: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition-duration: 250ms;
+}
+.buttons {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 10px solid pink;
+  border-top: 0px;
+  background-color: white;
+}
+.circle {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.highlight {
+  border: 1px solid black;
+}
+.left {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+}
+.right {
+  padding: 10px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.left:hover,
+.right:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
