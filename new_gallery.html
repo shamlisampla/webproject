@@ -1,0 +1,132 @@
+<html>
+
+<head>
+  
+  <style>
+      .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <!-- Navbar containg links to six different pages -->
+    
+    <!-- Navbar containg links to six different pages -->
+    <div class="landing-page">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+          <a class="navbar-brand" href="#">STUDENT MEKHMA</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="new_gallery.html">Tourist Places</a>
+                  <a class="dropdown-item" href="#">Open GIC Account</a>
+                  <a class="dropdown-item" href="apply_SIN.html">SIN Number</a>
+                  <a class="dropdown-item" href="jobPortal.html">Job Agencies</a>
+                  <a class="dropdown-item" href="opus.html">OPUS</a>
+                  
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="ticTacToe.html">Tic Tak Tow</a>
+                </li>
+            </ul>
+            
+          </div>
+        </nav>
+  <div class="container-fluid">
+      <center><h2>Places to visit in Montreal</h2></center>
+    <div class="row">
+      <div class="column">
+        <a href="https://en.wikipedia.org/wiki/Old_Port_of_Montreal"><img src="img/img1.png" /></a>
+        <img src="img/img4.jpg" />
+        <img src="img/img8.jpg" />
+     </div>
+      <div class="column">
+        <img src="img/img3.jpg">
+        <img src="img/img2.jpg">
+      </div>
+      <div class="column">
+        <img src="img/img6.jpg" />
+        <img src="img/img7.jpg" />
+        <img src="img/img5.jpg">
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

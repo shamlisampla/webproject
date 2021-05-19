@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap");
+
+    
+.navbar
+{
+  margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    background-color:transparent;
+}
+
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 100%;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    
+}
+.navbar-light
+{
+  background-color: transparent!important;
+}
+
+/* DROPDOWN*/
+
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url("img/img6.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-page h1 {
+  margin-top: 210px;
+  color: #400bec;
+  font-family: KoHo, Source Sans Pro;
+  font-weight: 900;
+
+  font-size: 7rem;
+}
+
+.landing-page p {
+  /* margin-top: 210px; */
+  color: #ec520b;
+  font-family: KoHo, Source Sans Pro;
+  font-weight: 900;
+
+  font-size: 2rem;
+}
+
+.landing-page a {
+  font-family: KoHo, Source Sans Pro;
+  padding: 20px;
+  font-weight: 900;
+}
+
+/* Css for about us page */
+
+.map {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+.map iframe {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Css for about us page */
+
+/* Css applied to the tic tac toe game */
+
+.game {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  /* text-shadow: -1px -1px #333; */
+  background: rgb(81, 138, 124);
+}
+.game h1 {
+  font-weight: bold;
+}
+.game .turn {
+  margin-bottom: 10px;
+}
+.game table {
+  border-collapse: collapse;
+  width: 150px;
+  margin: 0 auto;
+}
+.game table td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+.game table td:before {
+  font-size: 1.5em;
+  line-height: 1;
+}
+.game table td.cross:before {
+  content: "x";
+  color: lightblue;
+}
+.game table td.circle:before {
+  content: "o";
+  color: pink;
+}
+.game .reset {
+  background: #555;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.game .reset:hover {
+  opacity: 0.8;
+}
+
+
+/* IMAGE GALLERY*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+
+/* Responsive IFrame*/
+.container-sin {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
